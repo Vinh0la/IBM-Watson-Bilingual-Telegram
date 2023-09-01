@@ -1,0 +1,1152 @@
+{
+  "intents": [
+    {
+      "intent": "Cultivo",
+      "examples": [
+        {
+          "text": "gostaria de começar uma pequena plantação"
+        },
+        {
+          "text": "gostaria de dicas para plantar"
+        },
+        {
+          "text": "Gostaria de fazer uma plantação"
+        },
+        {
+          "text": "gostaria de fazer um cultivo"
+        },
+        {
+          "text": "me ajuda a fazer uma horta"
+        },
+        {
+          "text": "me ajude a realizar minha plantação"
+        },
+        {
+          "text": "me de dicas de plantação"
+        },
+        {
+          "text": "plantar"
+        },
+        {
+          "text": "queria fazer um cultivo em meu apartamento"
+        },
+        {
+          "text": "quero fazer uma horta"
+        },
+        {
+          "text": "quero fazer uma horta vertical"
+        },
+        {
+          "text": "quero iniciar minha agricultura familiar"
+        },
+        {
+          "text": "quero plantar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Encerramento",
+      "examples": [
+        {
+          "text": "a ajuda foi muito boa"
+        },
+        {
+          "text": "Adeus"
+        },
+        {
+          "text": "adeus assistente"
+        },
+        {
+          "text": "até logo"
+        },
+        {
+          "text": "Até logo assistente"
+        },
+        {
+          "text": "Encerrar atendimento"
+        },
+        {
+          "text": "Muito Obrugado"
+        },
+        {
+          "text": "Obrigado"
+        },
+        {
+          "text": "obrigado assistente"
+        },
+        {
+          "text": "Obrigado pela ajuda"
+        },
+        {
+          "text": "obrigado pela ajuda assistente"
+        },
+        {
+          "text": "Tchau"
+        },
+        {
+          "text": "Tchau assistente"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Entrada",
+      "examples": [
+        {
+          "text": "boa noite"
+        },
+        {
+          "text": "Boa noite assistente"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Boa tarde assistente"
+        },
+        {
+          "text": "bom dia"
+        },
+        {
+          "text": "Bom dia assistente"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "oi assistente"
+        },
+        {
+          "text": "Oi como vai"
+        },
+        {
+          "text": "Oi Seed"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Olá assistente"
+        },
+        {
+          "text": "olá Seed"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cpf",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "cpf",
+          "patterns": [
+            "(\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}), (\\d{11})",
+            "(/d{11})",
+            "(\\d{11})"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "endereco",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "endereco",
+          "patterns": [
+            "^(rua|rodovia|Rodovia|km|estrada|avenida|Rua|Avenida|Km|Estrada)\\s[A-Za-z]+\\,\\s\\d+$",
+            "^(rua|rodovia|Rodovia|km|estrada|avenida|Rua|Avenida|Km|Estrada)\\s[A-Za-z]+\\s(?:[A-Za-z]+\\s)?[A-Za-z]+\\,\\s\\d+$",
+            "^(rua|rodovia|Rodovia|km|estrada|avenida|Rua|Avenida|Km|Estrada)\\s[A-Za-z]+\\s(?:[A-Za-z]+\\s)?[A-Za-z]+\\,\\d+$"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "mail",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "Menu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Doar",
+          "synonyms": [
+            "DOAR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sobre nós",
+          "synonyms": [
+            "sobe nos",
+            "sob noz",
+            "sobre nos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Produtos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Alface",
+          "synonyms": [
+            "alface",
+            "alfaci"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "AlfaceVertical",
+          "synonyms": [
+            "Alface (vertical)",
+            "Alface Vertical",
+            "Alfaci Vertical"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Batata",
+          "synonyms": [
+            "batata",
+            "batatata"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mandioca",
+          "synonyms": [
+            "madioca",
+            "mandioka"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tomate",
+          "synonyms": [
+            "tomati"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "TomateVertical",
+          "synonyms": [
+            "Tomate (vertical)",
+            "Tomate Vertical",
+            "Tomati Vertical"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Resposta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Não",
+          "synonyms": [
+            "nao",
+            "naum"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sim",
+          "synonyms": [
+            "si",
+            "Sim"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Entrada",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá seja bem-vindo(a) à Seed, onde juntos cultivamos conhecimento e compartilhamos dicas valiosas para promover o cultivo familiar e combater a fome de forma sustentável. Como podemos ser úteis para você?\n\n- Plantar\n- Doar\n- Sobre nós"
+              },
+              {
+                "text": "Olá! Bem-vindo(a) à Seed, um espaço onde cultivamos conhecimento e compartilhamos valiosas dicas para promover o cultivo familiar e combater a fome de maneira sustentável.  Como podemos ser úteis para você?\n\n- Plantar\n- Doar\n- Sobre nós "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Entrada",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_4_1685584874291",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Insira seu logradouro:"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1685750323655",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1685750323656",
+      "previous_sibling": "handler_4_1685750323656"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1685749918429",
+      "context": {
+        "cpf": "@cpf.literal"
+      },
+      "conditions": "@cpf",
+      "event_name": "input",
+      "dialog_node": "handler_2_1685749918439"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1685750252239",
+      "context": {
+        "mail": "@mail.literal"
+      },
+      "conditions": "@mail",
+      "event_name": "input",
+      "dialog_node": "handler_2_1685750252240"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Insira seu Email: "
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1685750252239",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1685750252240",
+      "previous_sibling": "handler_2_1685750252240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1685750323655",
+      "context": {
+        "endereco": "@endereco.literal"
+      },
+      "conditions": "@endereco",
+      "event_name": "input",
+      "dialog_node": "handler_4_1685750323656"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Insira seu CPF (Apenas números):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1685749918429",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1685749918439",
+      "previous_sibling": "handler_2_1685749918439"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1685585150528",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1685585150534",
+      "previous_sibling": "handler_8_1685585150534"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1685585150528",
+      "event_name": "input",
+      "dialog_node": "handler_8_1685585150534"
+    },
+    {
+      "type": "standard",
+      "title": "ProcDoar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Estamos felizes que tenha dado o primeiro passo para ajudar outras pessoas, a Seed fica muito feliz com a sua iniciativa!\n"
+              },
+              {
+                "text": "Primeiramente vamos realizar seu cadastro na Seed (Toda informação inserida será armazenada com extremo cuidado), você está de acordo? (Sim | Não): "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "conditions": "@Menu:Doar",
+      "dialog_node": "node_10_1685739195589"
+    },
+    {
+      "type": "standard",
+      "title": "Encerramento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Agradecemos por escolher a Seed como seu parceiro no caminho do cultivo familiar. Foi um prazer compartilhar nosso conhecimento e ajudá-lo a colher os frutos do seu esforço. Desejamos sucesso contínuo em suas jornadas de cultivo e estaremos sempre aqui para apoiá-lo. Convidamos você a explorar nosso site e descobrir mais dicas sobre o plantio de vegetais e legumes para sua subsistência. Até logo e volte sempre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Encerramento",
+      "dialog_node": "node_2_1685047451176",
+      "previous_sibling": "Em outros casos"
+    },
+    {
+      "type": "standard",
+      "title": "AprovAlface ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão algumas dicas de como aproveitar o alface de diferentes maneiras:"
+              },
+              {
+                "text": "Saladas: O alface é frequentemente utilizado como base para saladas frescas e saudáveis. Lave e seque bem as folhas de alface e combine-as com outros vegetais, frutas, queijos, nozes, molhos e temperos de sua preferência. Experimente diferentes combinações para criar saladas coloridas e saborosas.\n"
+              },
+              {
+                "text": "Wraps ou Enroladinhos: Use as folhas grandes de alface como \"wraps\" para rechear com ingredientes diversos. Você pode colocar fatias de carne, frango, peixe ou tofu, junto com legumes, grãos e molhos, e enrolar a folha de alface ao redor do recheio para criar um sanduíche leve e nutritivo.\n"
+              },
+              {
+                "text": "Smoothies Verdes: Adicione folhas de alface aos seus smoothies verdes para aumentar a ingestão de vegetais. Combine o alface com frutas, água ou leite vegetal, e outros ingredientes de sua preferência, como bananas, maçãs, espinafre, limão e hortelã. Bata tudo no liquidificador até obter uma mistura homogênea e sirva.\n"
+              },
+              {
+                "text": "Sopas e Caldos: O alface pode ser adicionado a sopas e caldos para adicionar sabor e nutrientes. Pique as folhas de alface e acrescente ao final do preparo da sopa, deixando-as cozinhar apenas por alguns minutos para manter sua textura crocante.\n"
+              },
+              {
+                "text": "Refogados e Salteados: Experimente refogar ou saltear o alface com outros legumes em uma frigideira. Aqueça um pouco de azeite ou manteiga, adicione o alface picado e outros vegetais de sua escolha, como cenoura, pimentão e cogumelos. Tempere com sal, pimenta e ervas aromáticas, mexendo rapidamente até que os vegetais fiquem macios.\n"
+              },
+              {
+                "text": "Chips de Alface: Prepare chips de alface assando as folhas no forno até ficarem crocantes. Lave e seque bem as folhas, corte-as em pedaços menores e espalhe-as em uma assadeira forrada com papel manteiga. Tempere com azeite, sal e especiarias de sua preferência. Asse em forno preaquecido a cerca de 180°C por aproximadamente 10-15 minutos, até ficarem crocantes.\n"
+              },
+              {
+                "text": "Essas são apenas algumas ideias de como aproveitar o alface de maneiras diferentes. O alface é uma hortaliça versátil, rica em nutrientes e pode ser utilizado de diversas formas na culinária. Use sua criatividade e experimente diferentes preparações para desfrutar do sabor e dos benefícios do alface. Bom apetite!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1685587647574",
+      "conditions": "@Resposta:Sim",
+      "dialog_node": "node_2_1685737339895"
+    },
+    {
+      "type": "standard",
+      "title": "AprovMandioca",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão algumas dicas de como aproveitar a mandioca de diferentes maneiras:\n"
+              },
+              {
+                "text": "Cozida: A forma mais simples de aproveitar a mandioca é cozinhá-la em água com sal até ficar macia. Você pode descascar a mandioca, cortá-la em pedaços e colocá-la em uma panela com água fervente. Cozinhe até que os pedaços fiquem macios e você possa facilmente perfurá-los com um garfo. A mandioca cozida pode ser servida como acompanhamento ou utilizada em outros pratos.\n"
+              },
+              {
+                "text": "Frita: A mandioca também pode ser cortada em palitos e frita em óleo quente até ficar dourada e crocante. Após a fritura, escorra o excesso de óleo em papel absorvente e tempere com sal a gosto. As mandiocas fritas são um delicioso petisco.\n"
+              },
+              {
+                "text": "Purê: Assim como as batatas, a mandioca pode ser utilizada para fazer um purê cremoso. Cozinhe a mandioca até ficar macia e, em seguida, amasse-a com um garfo ou espremedor de batatas. Adicione manteiga, leite quente, sal e temperos a gosto. O purê de mandioca é um acompanhamento saboroso para diversos pratos.\n"
+              },
+              {
+                "text": "Farinha de Mandioca: A mandioca também pode ser transformada em farinha. Descasque a mandioca e rale-a finamente. Em seguida, coloque a mandioca ralada em uma assadeira e leve ao forno baixo por algumas horas até que a mandioca seque completamente. Depois, é só moer a mandioca seca no liquidificador ou processador de alimentos para obter a farinha de mandioca. A farinha de mandioca pode ser utilizada em receitas de bolos, pães, pudins e como acompanhamento em pratos salgados.\n"
+              },
+              {
+                "text": "Beiju: O beiju é uma iguaria típica brasileira feita com mandioca. Para fazer o beiju, rale a mandioca e esprema para retirar o excesso de líquido. Em seguida, espalhe a massa finamente ralada em uma frigideira aquecida e antiaderente, sem adicionar óleo. Deixe cozinhar até que a massa se firme e vire o beiju para dourar do outro lado. O beiju pode ser servido com manteiga, queijo, doce de leite ou outros recheios de sua preferência.\n"
+              },
+              {
+                "text": "Essas são apenas algumas ideias de como aproveitar a mandioca de diferentes formas. A mandioca é um alimento versátil e nutritivo, e essas sugestões podem ser adaptadas de acordo com suas preferências culinárias. Bom proveito!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1685586127592",
+      "conditions": "@Resposta:Sim",
+      "dialog_node": "node_3_1685587368016"
+    },
+    {
+      "type": "standard",
+      "title": "AprovTomate ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão algumas dicas de como aproveitar o tomate de diferentes maneiras:\n"
+              },
+              {
+                "text": "Saladas: O tomate é um ingrediente clássico em saladas frescas. Corte-o em fatias ou cubos e combine com outros vegetais, como alface, pepino e pimentão. Adicione temperos e molhos de sua preferência para uma salada refrescante.\n"
+              },
+              {
+                "text": "Molhos e Salsas: O tomate é a base de muitos molhos e salsas deliciosos. Faça seu próprio molho de tomate caseiro, cozinhando tomates frescos com cebola, alho e ervas aromáticas. Você também pode preparar uma salsa de tomate com tomates picados, cebola, coentro, limão e pimenta.\n"
+              },
+              {
+                "text": "Tomate Recheado: Corte os tomates ao meio e remova as sementes e o centro. Em seguida, recheie com uma combinação de queijo, ervas, pão ralado e temperos. Asse no forno até que o queijo derreta e os tomates fiquem macios.\n"
+              },
+              {
+                "text": "Conservas: Aproveite o tomate em conservas para utilização posterior. Faça molho de tomate caseiro e conserve em potes de vidro esterilizados. Você também pode preparar tomates secos ao sol, cortando-os em fatias e deixando-os secar ao ar livre ou no forno em temperatura baixa.\n"
+              },
+              {
+                "text": "Sopas e Molhos Quentes: Utilize o tomate para preparar sopas cremosas ou molhos quentes. Cozinhe os tomates com cebola, alho e caldo de legumes, e depois bata a mistura até obter uma textura suave. Adicione temperos e ervas a gosto.\n"
+              },
+              {
+                "text": "Tomate Assado: Corte os tomates em metades ou quartos e coloque-os em uma assadeira. Regue com azeite de oliva, tempere com sal, pimenta e ervas, e asse no forno até que fiquem macios e levemente caramelizados. Sirva como acompanhamento ou adicione a pratos como massas, pizzas ou saladas.\n"
+              },
+              {
+                "text": "Essas são apenas algumas ideias de como aproveitar o tomate de maneiras diferentes. O tomate é um ingrediente versátil e saboroso, que pode ser utilizado em uma ampla variedade de pratos. Use sua criatividade na cozinha e experimente diferentes preparações para desfrutar do sabor e dos benefícios do tomate. Bom apetite!\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685587650881",
+      "conditions": "@Resposta:Sim",
+      "dialog_node": "node_3_1685737382876"
+    },
+    {
+      "type": "standard",
+      "title": "ProcCultivo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Na Seed, estamos comprometidos em fornecer dicas valiosas de plantio para ajudar você a cultivar seus próprios alimentos e compartilhar o que não será consumido com ONGs ou pessoas em estado de necessidade. A seguir estão os alimentos que a Seed fornece dicas (Basta digitar o nome): \n"
+              },
+              {
+                "text": "Batata"
+              },
+              {
+                "text": "Mandioca"
+              },
+              {
+                "text": "Alface "
+              },
+              {
+                "text": "Alface (Vertical)"
+              },
+              {
+                "text": "Tomate"
+              },
+              {
+                "text": "Tomate (Vertical)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#Cultivo",
+      "dialog_node": "node_4_1685584874291",
+      "previous_sibling": "node_7_1685584274343"
+    },
+    {
+      "type": "standard",
+      "title": "Batata",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "-- Vamos Plantar Batatas --\n\nPreparação do solo:\nEscolha um local ensolarado, com solo bem drenado e rico em matéria orgânica.\nRemova pedras, ervas daninhas e detritos do solo.\nFaça a escavação ou aração do solo, garantindo que fique solto e livre de torrões.\n"
+              },
+              {
+                "text": "Seleção das batatas:\nAdquira batatas de qualidade razoável usar como sementes. Evite batatas verdes, murchas ou danificadas.\nOpte por batatas que estejam no estágio de maturação adequado, preferencialmente com brotos ou \"olhos\" salientes.\n"
+              },
+              {
+                "text": "Plantio:\nFaça sulcos ou valas no solo, com cerca de 10 a 15 cm de profundidade e espaçamento de 30 a 40 cm entre as linhas.\nColoque as batatas-semente nos sulcos, com uma distância de aproximadamente 20 cm entre elas.\nCertifique-se de que os brotos ou \"olhos\" das batatas estejam voltados para cima.\nCubra as batatas com cerca de 5 cm de terra solta.\n"
+              },
+              {
+                "text": "Irrigação:\nAs batatas necessitam de um suprimento adequado de água, especialmente durante o período de crescimento.\nMantenha o solo levemente úmido, evitando excesso de umidade ou encharcamento.\nRegue regularmente, garantindo que a água alcance as raízes das batatas."
+              },
+              {
+                "text": "Cuidados Adicionais:\nApós o plantio, monitore regularmente a presença de ervas daninhas e remova-as para evitar competição por nutrientes.\nDurante o crescimento, pode-se aplicar cobertura morta ao redor das plantas para controlar o crescimento de ervas daninhas e reter a umidade do solo.\nSe necessário, pode-se realizar o amontoamento de terra ao redor das plantas quando atingirem uma altura de 15 a 20 cm, o que estimula a formação de tubérculos extras.\n"
+              },
+              {
+                "text": "Colheita:\nAs batatas podem ser colhidas quando as folhas começarem a murchar e secar.\nUse uma pá ou garfo de jardim para desenterrar as batatas cuidadosamente, evitando danos aos tubérculos.\nDeixe as batatas colhidas secarem ao ar livre por algumas horas antes de armazená-las em local fresco, escuro e bem ventilado.\nLembre-se de que essas são apenas diretrizes gerais. As condições climáticas e do solo podem variar, portanto, é sempre importante adaptar as práticas de cultivo às condições específicas do local."
+              },
+              {
+                "text": "-------------------------------------------------------------------------------------"
+              },
+              {
+                "text": "Gostaria de ver dicas de como obter um melhor aproveitamento de suas batatas (Sim | Não):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685584874291",
+      "conditions": "@Produtos:Batata",
+      "dialog_node": "node_4_1685586120618"
+    },
+    {
+      "type": "standard",
+      "title": "Tomate",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "-- Vamos Plantar Tomates --\n\nPreparação do Solo:\nEscolha um local ensolarado para o plantio de tomates, pois eles precisam de pelo menos 6 horas de luz solar direta por dia.\nCertifique-se de que o solo esteja bem drenado e fértil. Remova ervas daninhas, pedras e detritos do terreno.\nFaça a adubação do solo com matéria orgânica, como composto ou esterco bem decomposto, para fornecer nutrientes essenciais às plantas.\n"
+              },
+              {
+                "text": "Clima e Temperatura:\nOs tomates são plantas que preferem climas quentes e temperaturas entre 21°C e 27°C.\nEvite períodos de temperaturas extremas, como geadas, que podem danificar as plantas.\nCaso você esteja em uma região com clima mais frio, é recomendado o cultivo de tomates em estufas ou utilizar técnicas de proteção, como cobertura com plástico transparente, para fornecer um ambiente mais quente e protegido.\n"
+              },
+              {
+                "text": "Irrigação:\nOs tomates precisam de uma irrigação adequada para um bom desenvolvimento.\nMantenha o solo úmido, mas evite o encharcamento, pois o excesso de água pode causar apodrecimento das raízes.\nA frequência e a quantidade de água dependem das condições climáticas e do tipo de solo. Geralmente, é recomendado irrigar de forma regular, mantendo o solo levemente úmido, especialmente durante os períodos de seca.\n"
+              },
+              {
+                "text": "Plantio:\nComece cultivando mudas de tomate em sementes ou adquira mudas de qualidade em um viveiro confiável.\nPlante as mudas no solo, em covas espaçadas cerca de 60 a 90 cm de distância, dependendo da variedade.\nEnterre as mudas até a primeira folha verdadeira, removendo as folhas inferiores antes do plantio.\nApós o plantio, pressione suavemente o solo ao redor das mudas e regue bem.\n"
+              },
+              {
+                "text": "Suporte e Tutoramento:\nPara um crescimento adequado e evitar que os tomateiros se espalhem pelo chão, é recomendado utilizar suportes ou estacas.\nConforme as plantas crescem, amarre-as ao suporte com barbante ou fitas macias, para dar suporte aos caules e evitar que se quebrem.\n"
+              },
+              {
+                "text": "Cuidados Adicionais:\nFique atento a pragas e doenças comuns que afetam os tomates, como pulgões, lagartas e doenças fúngicas. Utilize medidas preventivas, como rotação de culturas, plantio de variedades resistentes e uso de produtos orgânicos adequados, se necessário.\nAdube as plantas regularmente com fertilizantes orgânicos ou compostos ricos em nutrientes, especialmente durante o período de crescimento e frutificação.\n"
+              },
+              {
+                "text": "Colheita:\nOs tomates estão prontos para a colheita quando atingem sua cor característica e ficam levemente macios ao toque.\nUse tesouras de poda ou facas limpas para colher os tomates, cortando o caule próximo"
+              },
+              {
+                "text": "-------------------------------------------------------------------------------------"
+              },
+              {
+                "text": "Gostaria de ver dicas de como obter um melhor aproveitamento de suas batatas (Sim | Não):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685584874291",
+      "conditions": "@Produtos:Tomate",
+      "dialog_node": "node_4_1685586133647",
+      "previous_sibling": "node_6_1685586130062"
+    },
+    {
+      "type": "standard",
+      "title": "TomateVert",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "-- Vamos Plantar Tomates --\n\nEscolha das Variedades de Tomate:\nOpte por variedades de tomate que sejam adequadas ao cultivo vertical, como os tomates cereja, roma ou determinados híbridos compactos.\nCertifique-se de selecionar variedades que sejam resistentes a doenças comuns do tomateiro.\n"
+              },
+              {
+                "text": "Preparação do Ambiente:\nEncontre um local ensolarado em seu jardim ou utilize recipientes como vasos ou sacolas suspensas.\nCertifique-se de que a estrutura vertical seja estável e capaz de suportar o peso das plantas de tomate.\n"
+              },
+              {
+                "text": "Preparação do Solo:\nPrepare o solo adicionando composto orgânico para melhorar a estrutura e a fertilidade.\nCertifique-se de que o solo tenha boa drenagem para evitar o acúmulo excessivo de água.\n"
+              },
+              {
+                "text": "Plantio das Mudas:\nPlante as mudas de tomate verticalmente nas bolsas, vasos ou recipientes, enterrando cerca de dois terços do caule.\nRemova as folhas inferiores do caule antes do plantio para garantir um estabelecimento saudável.\n"
+              },
+              {
+                "text": "Suporte Vertical:\nInstale uma treliça, estacas ou uma estrutura em forma de \"V\" atrás das plantas de tomate.\nÀ medida que as plantas crescem, amarre cuidadosamente os ramos principais à treliça ou estacas, para dar suporte vertical e evitar que se dobrem ou quebrem.\n"
+              },
+              {
+                "text": "Irrigação:\nMantenha o solo sempre úmido, mas não encharcado. Regue as plantas regularmente, especialmente durante períodos secos.\nConsidere a utilização de sistemas de irrigação por gotejamento ou irrigação automática para garantir uma distribuição uniforme de água.\n"
+              },
+              {
+                "text": "Adubação e Nutrição:\nFornecer nutrientes adequados às plantas é essencial para um bom crescimento e desenvolvimento dos tomates.\nAplique adubo orgânico ou fertilizante equilibrado de acordo com as recomendações do fabricante, seguindo as necessidades nutricionais específicas do tomateiro.\n"
+              },
+              {
+                "text": "Poda e Desbaste:\nRealize a poda de ramos laterais e folhas inferiores para direcionar a energia da planta para o crescimento vertical e a produção de frutos.\nRemova os brotos laterais que surgem nas axilas das folhas para evitar que a planta fique muito densa.\n"
+              },
+              {
+                "text": "Monitoramento e Proteção:\nMonitore regularmente as plantas em busca de pragas, doenças ou deficiências nutricionais. Tome medidas adequadas para controlar qualquer problema identificado.\nProteja as plantas de ventos fortes ou tempestades, se necessário.\n"
+              },
+              {
+                "text": "Colheita:\nOs tomates estarão prontos para colheita quando estiverem maduros, com cores vibrantes e firmes ao toque.\nColha os tomates cuidadosamente, segurando o fruto e girando-o para soltá-lo do ramo."
+              },
+              {
+                "text": "-------------------------------------------------------------------------------------"
+              },
+              {
+                "text": "Gostaria de ver dicas de como obter um melhor aproveitamento de suas batatas (Sim | Não):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685584874291",
+      "conditions": "@Produtos:TomateVertical",
+      "dialog_node": "node_4_1685587650881",
+      "previous_sibling": "node_7_1685587647574"
+    },
+    {
+      "type": "standard",
+      "title": "AprovAlface",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão algumas dicas de como aproveitar o alface de diferentes maneiras:\n"
+              },
+              {
+                "text": "Saladas: O alface é frequentemente utilizado como base para saladas frescas e saudáveis. Lave e seque bem as folhas de alface e combine-as com outros vegetais, frutas, queijos, nozes, molhos e temperos de sua preferência. Experimente diferentes combinações para criar saladas coloridas e saborosas.\n"
+              },
+              {
+                "text": "Wraps ou Enroladinhos: Use as folhas grandes de alface como \"wraps\" para rechear com ingredientes diversos. Você pode colocar fatias de carne, frango, peixe ou tofu, junto com legumes, grãos e molhos, e enrolar a folha de alface ao redor do recheio para criar um sanduíche leve e nutritivo.\n"
+              },
+              {
+                "text": "Smoothies Verdes: Adicione folhas de alface aos seus smoothies verdes para aumentar a ingestão de vegetais. Combine o alface com frutas, água ou leite vegetal, e outros ingredientes de sua preferência, como bananas, maçãs, espinafre, limão e hortelã. Bata tudo no liquidificador até obter uma mistura homogênea e sirva.\n"
+              },
+              {
+                "text": "Sopas e Caldos: O alface pode ser adicionado a sopas e caldos para adicionar sabor e nutrientes. Pique as folhas de alface e acrescente ao final do preparo da sopa, deixando-as cozinhar apenas por alguns minutos para manter sua textura crocante.\n"
+              },
+              {
+                "text": "Refogados e Salteados: Experimente refogar ou saltear o alface com outros legumes em uma frigideira. Aqueça um pouco de azeite ou manteiga, adicione o alface picado e outros vegetais de sua escolha, como cenoura, pimentão e cogumelos. Tempere com sal, pimenta e ervas aromáticas, mexendo rapidamente até que os vegetais fiquem macios.\n"
+              },
+              {
+                "text": "Chips de Alface: Prepare chips de alface assando as folhas no forno até ficarem crocantes. Lave e seque bem as folhas, corte-as em pedaços menores e espalhe-as em uma assadeira forrada com papel manteiga. Tempere com azeite, sal e especiarias de sua preferência. Asse em forno preaquecido a cerca de 180°C por aproximadamente 10-15 minutos, até ficarem crocantes.\n"
+              },
+              {
+                "text": "Essas são apenas algumas ideias de como aproveitar o alface de maneiras diferentes. O alface é uma hortaliça versátil, rica em nutrientes e pode ser utilizado de diversas formas na culinária. Use sua criatividade e experimente diferentes preparações para desfrutar do sabor e dos benefícios do alface. Bom apetite!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_6_1685586130062",
+      "conditions": "@Resposta:Sim",
+      "dialog_node": "node_5_1685587380339"
+    },
+    {
+      "type": "standard",
+      "title": "AprovTomate",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão algumas dicas de como aproveitar o tomate de diferentes maneiras:\n"
+              },
+              {
+                "text": "Saladas: O tomate é um ingrediente clássico em saladas frescas. Corte-o em fatias ou cubos e combine com outros vegetais, como alface, pepino e pimentão. Adicione temperos e molhos de sua preferência para uma salada refrescante.\n"
+              },
+              {
+                "text": "Molhos e Salsas: O tomate é a base de muitos molhos e salsas deliciosos. Faça seu próprio molho de tomate caseiro, cozinhando tomates frescos com cebola, alho e ervas aromáticas. Você também pode preparar uma salsa de tomate com tomates picados, cebola, coentro, limão e pimenta.\n"
+              },
+              {
+                "text": "Tomate Recheado: Corte os tomates ao meio e remova as sementes e o centro. Em seguida, recheie com uma combinação de queijo, ervas, pão ralado e temperos. Asse no forno até que o queijo derreta e os tomates fiquem macios.\n"
+              },
+              {
+                "text": "Conservas: Aproveite o tomate em conservas para utilização posterior. Faça molho de tomate caseiro e conserve em potes de vidro esterilizados. Você também pode preparar tomates secos ao sol, cortando-os em fatias e deixando-os secar ao ar livre ou no forno em temperatura baixa.\n"
+              },
+              {
+                "text": "Sopas e Molhos Quentes: Utilize o tomate para preparar sopas cremosas ou molhos quentes. Cozinhe os tomates com cebola, alho e caldo de legumes, e depois bata a mistura até obter uma textura suave. Adicione temperos e ervas a gosto.\n"
+              },
+              {
+                "text": "Tomate Assado: Corte os tomates em metades ou quartos e coloque-os em uma assadeira. Regue com azeite de oliva, tempere com sal, pimenta e ervas, e asse no forno até que fiquem macios e levemente caramelizados. Sirva como acompanhamento ou adicione a pratos como massas, pizzas ou saladas.\n"
+              },
+              {
+                "text": "Essas são apenas algumas ideias de como aproveitar o tomate de maneiras diferentes. O tomate é um ingrediente versátil e saboroso, que pode ser utilizado em uma ampla variedade de pratos. Use sua criatividade na cozinha e experimente diferentes preparações para desfrutar do sabor e dos benefícios do tomate. Bom apetite!\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685586133647",
+      "conditions": "@Resposta:Sim",
+      "dialog_node": "node_5_1685587447935"
+    },
+    {
+      "type": "standard",
+      "title": "Alface",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "-- Vamos Plantar Alfaces --\n\nPreparação do Solo:\nEscolha um local com solo fértil e bem drenado para o plantio de alface.\nRemova ervas daninhas, pedras e detritos do terreno.\nFaça a adubação do solo com matéria orgânica, como composto ou esterco bem decomposto, para melhorar a estrutura do solo e fornecer nutrientes às plantas.\n"
+              },
+              {
+                "text": "Clima e Temperatura:\nA alface é uma planta que se adapta bem a climas amenos e temperaturas entre 10°C e 24°C.\nEvite períodos de temperaturas extremas, como calor excessivo ou geadas, que podem prejudicar o desenvolvimento da alface.\nCaso você esteja em uma região com clima quente, procure cultivar alface em períodos mais frescos do ano ou utilizar técnicas de sombreamento para proteger as plantas.\n"
+              },
+              {
+                "text": "Irrigação:\nA alface necessita de uma irrigação adequada para o seu crescimento saudável.\nMantenha o solo sempre úmido, mas evite o encharcamento, que pode levar ao apodrecimento das raízes.\nA frequência e a quantidade de água dependem das condições climáticas e do tipo de solo. Geralmente, é recomendado irrigar de forma regular e suficiente para manter o solo levemente úmido.\n"
+              },
+              {
+                "text": "Plantio:\nSemeie as sementes de alface diretamente no solo ou inicie o cultivo em bandejas de mudas para posterior transplante.\nPlante as sementes em covas rasas, com uma distância de cerca de 20 a 30 cm entre as plantas e entre as fileiras.\nCubra as sementes com uma fina camada de solo, pressionando levemente para firmar.\nRegue suavemente após o plantio para ajudar na germinação.\n"
+              },
+              {
+                "text": "Cuidados Adicionais:\nRealize o desbaste das mudas, removendo as plantas excessivas para proporcionar espaço adequado para o crescimento das plantas selecionadas.\nFique atento a pragas e doenças comuns que afetam a alface, como pulgões, lesmas e doenças fúngicas. Utilize medidas preventivas, como rotação de culturas e aplicação de produtos orgânicos adequados, se necessário.\nAdube as plantas regularmente com fertilizantes orgânicos ou compostos para fornecer nutrientes essenciais ao crescimento saudável.\n"
+              },
+              {
+                "text": "Colheita:\nA alface pode ser colhida quando as folhas estiverem grandes e formadas.\nCorte as folhas externas da planta, deixando as internas para continuar o crescimento.\nA colheita deve ser feita de forma gradual, conforme a necessidade, para prolongar a produção."
+              },
+              {
+                "text": "-------------------------------------------------------------------------------------"
+              },
+              {
+                "text": "Gostaria de ver dicas de como obter um melhor aproveitamento de suas batatas (Sim | Não):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685584874291",
+      "conditions": "@Produtos:Alface",
+      "dialog_node": "node_6_1685586130062",
+      "previous_sibling": "node_7_1685586127592"
+    },
+    {
+      "type": "standard",
+      "title": "Objetivo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O nosso objetivo é incentivar a produção de alimentos de forma simples e sustentável, fornecendo dicas e instruções para o plantio e a agricultura de subsistência, tanto de forma convencional como explorando métodos menos explorados, como a agricultura vertical. Esse método é propício para ambientes urbanos ou residenciais, assim tentamos contribuir para diminuir os índices de insegurança alimentar no mundo ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@Menu:(Sobre nós)",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1685584274343",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Mandioca",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "-- Vamos Plantar Mandiocas --\n\nPreparação do solo:\nEscolha um local com solo bem drenado, de preferência arenoso ou argiloso.\nLimpe o terreno de ervas daninhas, pedras e detritos.\nRevolva o solo para soltá-lo e remover torrões.\nAdicione matéria orgânica, como esterco ou compostagem, para melhorar a fertilidade do solo.\n"
+              },
+              {
+                "text": "Requisitos de clima:\nA mandioca prospera em regiões tropicais e subtropicais com temperaturas entre 25°C a 35°C.\nEla precisa de um ambiente livre de geadas, pois o frio pode prejudicar as plantas.\nA chuva adequada é importante, com um mínimo de 1.000 mm distribuídos uniformemente ao longo da estação de crescimento.\n"
+              },
+              {
+                "text": "Plantio:\nSelecione manivas (ramos de mandioca) saudáveis e livre de doenças, preferencialmente de variedades de alto rendimento.\nCorte os ramos em pedaços de 20-30 cm, garantindo que cada pedaço tenha de 3 a 5 nós.\nPlante as manivas inclinadas no solo, enterrando um terço da maniva e deixando dois terços expostos.\nMantenha um espaçamento de 1 a 1,5 metros entre as linhas e de 0,8 a 1 metro entre as plantas.\n"
+              },
+              {
+                "text": "Irrigação:\nEmbora a mandioca seja relativamente tolerante à seca, regas regulares durante períodos secos são benéficas, especialmente nos primeiros meses após o plantio.\nAplique água de forma uniforme para garantir uma penetração adequada da umidade na zona das raízes.\nEvite o excesso de água, pois a mandioca prefere solos bem drenados e o excesso de umidade pode causar apodrecimento das raízes.\n"
+              },
+              {
+                "text": "Cuidados Adicionais:\nMantenha a área de plantio livre de ervas daninhas, pois elas competem por nutrientes e água.\nA remoção manual das ervas daninhas é recomendada, especialmente durante as primeiras etapas de crescimento das plantas.\nA utilização de cobertura morta com materiais orgânicos pode ajudar a suprimir o crescimento de ervas daninhas e reter a umidade do solo.\n"
+              },
+              {
+                "text": "Colheita:\nA mandioca é geralmente colhida de 8 a 12 meses após o plantio, dependendo da variedade e do uso desejado.\nInicie a colheita quando as folhas ficarem amarelas e começarem a cair, o que indica a maturidade.\nUse uma pá ou uma forquilha para cavar cuidadosamente as raízes de mandioca, evitando danificá-las.\nApós a colheita, remova a casca externa antes de consumir ou processar as raízes."
+              },
+              {
+                "text": "-------------------------------------------------------------------------------------"
+              },
+              {
+                "text": "Gostaria de ver dicas de como obter um melhor aproveitamento de suas batatas (Sim | Não):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685584874291",
+      "conditions": "@Produtos:Mandioca",
+      "dialog_node": "node_7_1685586127592",
+      "previous_sibling": "node_4_1685586120618"
+    },
+    {
+      "type": "standard",
+      "title": "AlfaceVert",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "-- Vamos Plantar Alfaces --\n\n\nEscolha das Variedades de Alface:\nOpte por variedades de alface que se adaptem bem ao cultivo vertical, como alface de folhas soltas ou alface romana.\nVariedades compactas, que não crescem muito em altura, são mais adequadas para o cultivo vertical.\n"
+              },
+              {
+                "text": "Preparação do Ambiente:\nEncontre um local onde tenha passagem de luz solar onde você possa fixar o sistema vertical de cultivo, como uma parede, cerca ou estrutura vertical.\nCertifique-se de que o local tenha boa ventilação para evitar o acúmulo de umidade, o que pode levar a problemas de doenças nas plantas.\n"
+              },
+              {
+                "text": "Estrutura Vertical:\nConstrua ou adquira uma estrutura vertical adequada para o cultivo de alface. Existem diferentes opções, como jardineiras verticais, bolsas suspensas, prateleiras ou treliças.\nCertifique-se de que a estrutura seja resistente e capaz de suportar o peso das plantas, além de fornecer suporte adequado para as raízes e o crescimento vertical das plantas.\n"
+              },
+              {
+                "text": "Preparação do Solo e Plantio:\nPrepare o solo adicionando matéria orgânica, como composto ou húmus, para melhorar a estrutura e a fertilidade.\nPlante as mudas ou sementes de alface nas bolsas, recipientes ou compartimentos da estrutura vertical, garantindo que haja espaço suficiente entre as plantas para um bom crescimento.\nCertifique-se de que as raízes estejam bem cobertas com solo e compacte-o levemente ao redor das mudas.\n"
+              },
+              {
+                "text": "Irrigação:\nA irrigação é essencial para o cultivo vertical de alface.\nVerifique regularmente a umidade do solo e regue as plantas sempre que necessário para manter o solo úmido, mas não encharcado.\nConsidere a utilização de sistemas de irrigação por gotejamento ou irrigação automática para facilitar a irrigação e evitar o desperdício de água.\n"
+              },
+              {
+                "text": "Adubação e Nutrição:\nFornecer nutrientes adequados às plantas é importante para o sucesso do cultivo de alface vertical.\nAdube regularmente as plantas com fertilizantes orgânicos ou soluções nutritivas (composto é uma excelente fonte de nutrientes para as plantas. Você pode fazer o seu próprio composto em casa, utilizando restos de alimentos orgânicos, como cascas de frutas e legumes, borra de café, folhas secas, entre outros. Certifique-se de ter uma composteira adequada e siga as instruções para obter um composto bem decomposto), de acordo com as instruções do fabricante ou recomendações específicas para alface.\n"
+              },
+              {
+                "text": "Manejo e Colheita:\nMonitore regularmente as plantas para identificar e tratar problemas, como pragas ou doenças.\nQuando as folhas de alface estiverem maduras e prontas para a colheita, corte-as cuidadosamente na base da planta.\nÀ medida que você colhe as folhas, a planta continuará a produzir novas folhas, permitindo colheitas contínuas ao longo do tempo."
+              },
+              {
+                "text": "-------------------------------------------------------------------------------------"
+              },
+              {
+                "text": "Gostaria de ver dicas de como obter um melhor aproveitamento de suas batatas (Sim | Não):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685584874291",
+      "conditions": "@Produtos:AlfaceVertical",
+      "dialog_node": "node_7_1685587647574",
+      "previous_sibling": "node_4_1685586133647"
+    },
+    {
+      "type": "frame",
+      "title": "Dados",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os seguintes dados estão corretos? (Sim | Não)\n"
+              },
+              {
+                "text": "- $cpf\n- $mail\n- $endereco"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1685739195589",
+      "conditions": "@Resposta:Sim",
+      "dialog_node": "node_7_1685749892643"
+    },
+    {
+      "type": "standard",
+      "title": "AprovBatata",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui estão algumas dicas de como aproveitar a batata de diferentes maneiras:\n"
+              },
+              {
+                "text": "Cozida ou Assada: A forma mais clássica de preparar batatas é cozinhá-las ou assá-las. Você pode descascá-las, cortá-las em pedaços e cozinhar em água fervente até ficarem macias. Em seguida, pode ser temperada com sal, manteiga e ervas para servir como acompanhamento. Ou você pode assá-las inteiras no forno até ficarem douradas e crocantes por fora e macias por dentro.\n"
+              },
+              {
+                "text": "Purê de Batatas: Cozinhe as batatas em água com sal até ficarem macias. Amasse-as com um garfo ou passe por um espremedor de batatas para obter um purê liso. Adicione manteiga, leite quente e tempere a gosto com sal e pimenta. É um ótimo acompanhamento para carnes, aves ou peixes.\n"
+              },
+              {
+                "text": "Batata Gratinada: Fatie as batatas em rodelas finas e coloque em um refratário untado. Adicione creme de leite, queijo ralado e temperos a gosto. Asse no forno até dourar e as batatas ficarem macias e cremosas por dentro.\n"
+              },
+              {
+                "text": "Fritas ou Chips: Corte as batatas em palitos ou fatias finas e frite em óleo quente até ficarem douradas e crocantes. Se preferir uma opção mais saudável, asse as batatas em fatias finas no forno até ficarem crocantes e levemente douradas.\n"
+              },
+              {
+                "text": "Sopa de Batata: Cozinhe as batatas com caldo de legumes, cebola, alho e temperos de sua escolha. Depois, bata tudo no liquidificador ou com um mixer até obter uma consistência cremosa. Adicione creme de leite ou iogurte natural para deixar a sopa ainda mais cremosa e saborosa.\n"
+              },
+              {
+                "text": "Salada de Batata: Cozinhe as batatas em água com sal até ficarem macias. Corte-as em cubos e misture com cebola picada, maionese, mostarda, picles e temperos a gosto. Sirva fria como acompanhamento em churrascos, piqueniques ou refeições leves."
+              },
+              {
+                "text": "Essas são apenas algumas ideias para aproveitar as batatas de diferentes formas. Elas são versáteis e podem ser utilizadas em uma variedade de pratos. Use sua criatividade na cozinha e experimente novas receitas com batatas. Bom apetite!\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1685586120618",
+      "conditions": "@Resposta:Sim",
+      "dialog_node": "node_9_1685587350638"
+    },
+    {
+      "type": "standard",
+      "title": "OutDoar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem! Agora separe a quantidade de alimentos em bom estado e doe para pessoas próximas em estado de necessidade ou entregue nas ONGs próximas à $endereco que enviaremos no Email: $mail... "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1685749892643",
+      "conditions": "@Resposta:Sim",
+      "dialog_node": "node_9_1685751093017"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1685749892643",
+      "variable": "$endereco",
+      "dialog_node": "slot_10_1685750323655",
+      "previous_sibling": "slot_7_1685750252239"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1685749892643",
+      "variable": "$cpf",
+      "dialog_node": "slot_2_1685749918429",
+      "previous_sibling": "node_9_1685751093017"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1685584874291",
+      "dialog_node": "slot_7_1685585150528",
+      "previous_sibling": "node_4_1685587650881"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1685749892643",
+      "variable": "$mail",
+      "dialog_node": "slot_7_1685750252239",
+      "previous_sibling": "slot_2_1685749918429"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "",
+  "name": "Seed-dialog"
+}
